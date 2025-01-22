@@ -1,0 +1,21 @@
+package com.novaedge.micro.ratingservice.service;
+
+
+import com.novaedge.micro.ratingservice.model.TbNovaMcroRating;
+
+import java.util.List;
+
+public interface TbNovaMcroRatingService {
+
+    TbNovaMcroRating addRating(TbNovaMcroRating ratingModel);
+
+    TbNovaMcroRating getRatingById(Long ratingId);
+
+    List<TbNovaMcroRating> getRatingsByUserId(String userId);
+
+    List<TbNovaMcroRating> getAllRatings();
+
+    TbNovaMcroRating updateRating(Long ratingId, TbNovaMcroRating ratingModel);
+
+    void deleteRating(Long ratingId);
+}

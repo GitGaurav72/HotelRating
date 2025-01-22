@@ -1,0 +1,10 @@
+package com.novaedge.micro.userservice.entity;
+
+public class Rating {
+
+	private String ratingId;
+	private String userid;
+	private String hotelId;
+	private int rating;
+	private String feedback;
+}

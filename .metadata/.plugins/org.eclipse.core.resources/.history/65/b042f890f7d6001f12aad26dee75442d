@@ -1,0 +1,5 @@
+package com.novaedge.micro.ratingservice.controller;
+
+public class TbNovaMcroRatingController {
+
+}

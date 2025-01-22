@@ -1,0 +1,12 @@
+spring.application.name=ratingservice
+
+
+# Server settings
+server.port=8083
+
+# MongoDB settings
+spring.data.mongodb.uri=mongodb://localhost:27017/microservices
+spring.data.mongodb.database=microservices
+
+# Other Spring settings
+#spring.jpa.show-sql=true

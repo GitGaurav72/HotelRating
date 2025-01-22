@@ -1,0 +1,14 @@
+package com.novaedge.micro.hotelservice.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.novaedge.micro.hotelservice.entity.TbNovaMcroHotel;
+
+@Repository
+public interface TbNovaMcroHotelRepository extends JpaRepository<TbNovaMcroHotel, Long> {
+
+	TbNovaMcroHotel findByHotelId (String hotel_id);
+}

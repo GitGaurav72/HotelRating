@@ -1,0 +1,5 @@
+package com.novaedge.micro.hotelservice.repository;
+
+@Repository
+public interface HotelRepository extends JpaRepository<TbNovaMcroHotel, Long> {
+}

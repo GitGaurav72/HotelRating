@@ -1,0 +1,68 @@
+<header>
+        <h1>Welcome to Our Hotel</h1>
+        <nav>
+            <ul>
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/room">Rooms</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
+                <li><a routerLink="/login">Login</a></li>
+                <li><a routerLink="/userList">GetAll</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+         
+        <div ng-view></div>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Experience Luxury Stay</h2>
+                <p>Book your stay now and enjoy our luxurious accommodations.</p>
+                <a routerLink="/room" class="btn">View Rooms</a>
+            </div>
+        </section>
+    
+        <section id="about" class="about-section">
+            <div class="hero-content">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula in ligula dignissim, et aliquam est sollicitudin.</p>
+                <a routerLink="/contact" class="btn">Contact Us</a>
+            </div>
+        </section>
+    
+        <section id="rooms" class="rooms-section">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <img [src]="imageUrl" alt="Room 1" style="width: 600px; height: 400px;">
+                <h3>Deluxe Room</h3>
+                <p>Starting from 1500<span>&#8377;</span>/night</p>
+            </div>
+            
+            <div class="room">
+                <img [src]="imgUrl2" alt="Room 2" style="width: 600px; height: 400px;">
+                <h3>Suite Room</h3>
+                <p>Starting from 2500 <span>&#8377;</span> /night</p>
+            </div>
+           
+            <a class="btn">Book Now</a>
+        </section>
+    
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For reservations or inquiries, feel free to contact us:</p>
+            <p>Email: info&#64;example.com</p> 
+            <p>Phone: (123) 456-7890</p>
+        </section>
+        
+    </main> 
+    
+
+    <footer>
+        <p>&copy; 2024 Hotel Web Application. All rights reserved.</p>
+    </footer> 
+
+  
+
+
+

@@ -1,0 +1,16 @@
+package com.novaedge.micro.ratingservice.repository;
+
+
+
+import com.novaedge.micro.ratingservice.entity.TbNovaMcroRating;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface TbNovaMcroRatingRepository extends JpaRepository<TbNovaMcroRating, Long> {
+
+    List<TbNovaMcroRating> findByUserId(String userId);
+}
+

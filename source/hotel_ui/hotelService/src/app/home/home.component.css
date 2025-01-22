@@ -1,0 +1,168 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+
+.hero {
+    background-image: url('../../assets/pic/hero-bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #313;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.rooms-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rooms-section .btn {
+    margin-top: 20px; /* Adjust as needed */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact-section {
+    margin: 50px 0;
+}
+
+.rooms-section .room {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rooms-section .room > .btn {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rooms-section .room img {
+    width: 100%;
+    border-radius: 5px;
+}
+.about-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+}
+
+
+.about-section .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-section .btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,5 @@
+package com.novaedge.micro.userservice.controller;
+
+public class TbNovaMcroUserController {
+
+}

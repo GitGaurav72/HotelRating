@@ -1,0 +1,53 @@
+package com.novaedge.micro.hotelservice.serviceImpl;
+
+import java.util.List;
+
+import org.hibernate.annotations.SecondaryRow;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.stereotype.Service;
+
+import com.novaedge.micro.hotelservice.entity.TbNovaMcroHotel;
+import com.novaedge.micro.hotelservice.repository.TbNovaMcroHotelRepository;
+import com.novaedge.micro.hotelservice.service.TbNovaMcroHotelService;
+
+@Service
+public class TbNovaMcroHotelServiceImpl implements TbNovaMcroHotelService{
+
+
+	@Autowired
+    private TbNovaMcroHotelRepository tbNovaMcroHotelRepository;
+
+    @Override
+    public List<TbNovaMcroHotel> getAllHotels() {
+        return tbNovaMcroHotelRepository.findAll();
+    }
+
+    @Override
+    public TbNovaMcroHotel getHotelById(Long id) {
+        return tbNovaMcroHotelRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Hotel not found with id: " + id));
+    }
+
+
+    @Override
+    public void deleteHotel(Long id) {
+        TbNovaMcroHotel hotel = getHotelById(id);
+        tbNovaMcroHotelRepository.delete(hotel);
+    }
+
+	@Override
+	public TbNovaMcroHotel createHotel(TbNovaMcroHotel hotel) {
+		return tbNovaMcroHotelRepository.save(hotel);
+	}
+
+	@Override
+	public TbNovaMcroHotel updateHotel(Long id, TbNovaMcroHotel hotel) {
+        TbNovaMcroHotel existingHotel = getHotelById(id);
+        existingHotel.setName(hotel.getName());
+        existingHotel.setLocation(hotel.getLocation());
+        existingHotel.setRating(hotel.getRating());
+        existingHotel.setAvailableRooms(hotel.getAvailableRooms());
+        return tbNovaMcroHotelRepository.save(existingHotel);
+	}
+}

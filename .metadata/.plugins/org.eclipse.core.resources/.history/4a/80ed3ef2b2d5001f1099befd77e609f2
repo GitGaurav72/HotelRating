@@ -1,0 +1,21 @@
+package com.novaedge.micro.userservice.service;
+import com.novaedge.micro.userservice.entity.TbNovaMcroUser;
+import com.novaedge.micro.userservice.repository.TbNovaMcroUserRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface TbNovaMcroUserService {
+
+    // Create or update a user
+    public TbNovaMcroUser saveUser(TbNovaMcroUser user);
+    // Find user by ID
+    public Optional<TbNovaMcroUser> getUserById(Long userId);
+    // Find all users
+    public List<TbNovaMcroUser> getAllUsers();
+    // Delete user by ID
+    public void deleteUser(Long userId);
+}

@@ -1,0 +1,38 @@
+package com.novaedge.micro.hotelservice.controller;
+
+@RestController
+@RequestMapping("/api/hotels")
+public class HotelController {
+
+    private final HotelService hotelService;
+
+    public HotelController(HotelService hotelService) {
+        this.hotelService = hotelService;
+    }
+
+    @GetMapping
+    public List<TbNovaMcroHotel> getAllHotels() {
+        return hotelService.getAllHotels();
+    }
+
+    @GetMapping("/{id}")
+    public TbNovaMcroHotel getHotelById(@PathVariable Long id) {
+        return hotelService.getHotelById(id);
+    }
+
+    @PostMapping
+    public TbNovaMcroHotel createHotel(@RequestBody TbNovaMcroHotel hotel) {
+        return hotelService.createHotel(hotel);
+    }
+
+    @PutMapping("/{id}")
+    public TbNovaMcroHotel updateHotel(@PathVariable Long id, @RequestBody TbNovaMcroHotel hotel) {
+        return hotelService.updateHotel(id, hotel);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteHotel(@PathVariable Long id) {
+        hotelService.deleteHotel(id);
+        return ResponseEntity.noContent().build();
+    }
+}

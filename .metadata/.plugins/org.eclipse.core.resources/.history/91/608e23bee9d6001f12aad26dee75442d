@@ -1,0 +1,5 @@
+spring.application.name=ratingservice
+
+
+
+mongodb://localhost:27017

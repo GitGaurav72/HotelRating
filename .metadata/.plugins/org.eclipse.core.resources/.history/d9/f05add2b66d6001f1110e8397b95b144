@@ -1,0 +1,5 @@
+package com.novaedge.micro.hotelservice.service;
+
+public interface TbNovaMcroHotelService {
+
+}

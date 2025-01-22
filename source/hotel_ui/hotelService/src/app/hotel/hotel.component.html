@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel List</title>
+    <link rel="stylesheet" href="./hotel.component.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hotel List</h2>
+        <div class="hotel-list">
+            <div class="hotel">
+                <img [src]="imageUrl" alt="Hotel 1">
+                <h3>Hotel Name 1</h3>
+                <p>Location: Location 1</p>
+                <p>Rating: 4.5/5</p>
+                <button>Book Now</button>
+            </div>
+            <div class="hotel">
+                <img [src]="imageUrl1" alt="Hotel 2">
+                <h3>Hotel Name 2</h3>
+                <p>Location: Location 2</p>
+                <p>Rating: 4.2/5</p>
+                <button>Book Now</button>
+            </div>
+            <!-- Add more hotels as needed -->
+        </div>
+    </div>
+</body>
+</html>
