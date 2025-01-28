@@ -32,6 +32,7 @@ public class TbNovaMcroUser implements Serializable {
     @Column(name = "UPDATED_AT")
     private LocalDateTime updatedAt;
     
+
     @Transient
     private List<TbNovaMcroRating> ratings = new ArrayList<>();
 
@@ -86,7 +87,15 @@ public class TbNovaMcroUser implements Serializable {
     
     
 
-    // ToString, Equals, and HashCode
+    public List<TbNovaMcroRating> getRatings() {
+		return ratings;
+	}
+
+	public void setRatings(List<TbNovaMcroRating> ratings) {
+		this.ratings = ratings;
+	}
+
+	// ToString, Equals, and HashCode
     @Override
     public String toString() {
         return "TbNovaMcroUser{" +

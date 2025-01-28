@@ -1,5 +1,0 @@
-package com.novaedge.micro.hotelservice.exception;
-
-public class GlobalExceptionHandler {
-
-}

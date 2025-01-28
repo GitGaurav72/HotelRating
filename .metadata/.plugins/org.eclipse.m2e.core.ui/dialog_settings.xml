@@ -2,9 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="D:\projects\hotelRating\serviceRegistory"/>
-			<item value="D:\projects\hotelRating\ratingservice"/>
-			<item value="D:\projects\hotelRating\userservice"/>
+			<item value="D:\projects\HotelRating\source\hotelApi"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -14,9 +12,5 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
-	</section>
-	<section name="org.eclipse.m2e.core.pom.overview">
-	</section>
-	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

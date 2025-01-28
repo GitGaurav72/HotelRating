@@ -1,9 +1,0 @@
-package com.novaedge.micro.userservice.repository;
-
-import com.yourpackage.entities.TbNovaMcroUser;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface TbNovaMcroUserRepository extends JpaRepository<TbNovaMcroUser, Long> {
-}

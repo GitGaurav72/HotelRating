@@ -1,5 +1,0 @@
-package com.novaedge.micro.userservice.entity;
-
-public class Rating {
-
-}

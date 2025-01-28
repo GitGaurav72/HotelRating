@@ -1,9 +1,0 @@
-package com.novaedge.micro.hotelservice.service;
-
-public interface TbNovaMcroHotelService {
-    List<TbNovaMcroHotel> getAllHotels();
-    TbNovaMcroHotel getHotelById(Long id);
-    TbNovaMcroHotel createHotel(TbNovaMcroHotel hotel);
-    TbNovaMcroHotel updateHotel(Long id, TbNovaMcroHotel hotel);
-    void deleteHotel(Long id);
-}
