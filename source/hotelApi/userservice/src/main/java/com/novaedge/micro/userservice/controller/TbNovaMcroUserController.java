@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.novaedge.micro.userservice.entity.TbNovaMcroRating;
 import com.novaedge.micro.userservice.entity.TbNovaMcroUser;
 import com.novaedge.micro.userservice.service.TbNovaMcroUserService;
 
@@ -45,5 +46,13 @@ public class TbNovaMcroUserController {
     public ResponseEntity<Void> deleteUser(@PathVariable String userId) {
         userService.deleteUser(userId);
         return ResponseEntity.noContent().build();
+    }
+    
+    
+    // Add new rating by userId and hotelId
+    @PostMapping("/add_rating/{userId}/{hotelId}")
+    public ResponseEntity<TbNovaMcroRating> addRating(@PathVariable("userId") String userId, @PathVariable("hotelId") String hotelId, @RequestBody TbNovaMcroRating tbNovaMcroRating ){
+    	ResponseEntity<TbNovaMcroRating> response  = userService.addRating(userId, hotelId, tbNovaMcroRating);
+         return response;
     }
 }

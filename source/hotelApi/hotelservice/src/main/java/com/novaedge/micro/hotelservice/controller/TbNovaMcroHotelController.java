@@ -23,7 +23,7 @@ public class TbNovaMcroHotelController {
 	@Autowired
     private TbNovaMcroHotelService tbNovaMcroHotelService;
 
-    // Endpoint to retrieve all h otels
+    // Endpoint to retrieve all hotels
     @GetMapping
     public List<TbNovaMcroHotel> getAllHotels() {
         return tbNovaMcroHotelService.getAllHotels();

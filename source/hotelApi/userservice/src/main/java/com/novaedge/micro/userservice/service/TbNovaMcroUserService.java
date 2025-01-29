@@ -1,8 +1,10 @@
 package com.novaedge.micro.userservice.service;
+import com.novaedge.micro.userservice.entity.TbNovaMcroRating;
 import com.novaedge.micro.userservice.entity.TbNovaMcroUser;
 import com.novaedge.micro.userservice.repository.TbNovaMcroUserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,4 +16,5 @@ public interface TbNovaMcroUserService {
     public TbNovaMcroUser getUserById(String userId);
     public List<TbNovaMcroUser> getAllUsers();
     public void deleteUser(String userId);
+	public ResponseEntity<TbNovaMcroRating> addRating(String userId, String hotelId, TbNovaMcroRating tbNovaMcroRating);
 }

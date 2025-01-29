@@ -7,13 +7,13 @@ import jakarta.persistence.Column;
 public class TbNovaMcroRating {
 
 	private String ratingId;
-	private String userid;
+	private String userId;
 	private String hotelId;
 	private int rating;
 	private String comment;
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt; 
-	
+	private TbNovaMcroHotel hotel;
 	
 	public String getRatingId() {
 		return ratingId;
@@ -21,11 +21,11 @@ public class TbNovaMcroRating {
 	public void setRatingId(String ratingId) {
 		this.ratingId = ratingId;
 	}
-	public String getUserid() {
-		return userid;
+	public String getUserId() {
+		return userId;
 	}
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setUserId(String userid) {
+		this.userId = userid;
 	}
 	public String getHotelId() {
 		return hotelId;
@@ -58,20 +58,28 @@ public class TbNovaMcroRating {
 	public void setUpdatedAt(LocalDateTime updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+	
+	public TbNovaMcroHotel getHotel() {
+		return hotel;
+	}
+	public void setHotel(TbNovaMcroHotel hotel) {
+		this.hotel = hotel;
+	}
 	public TbNovaMcroRating() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public TbNovaMcroRating(String ratingId, String userid, String hotelId, int rating, String comment,
-			LocalDateTime createdAt, LocalDateTime updatedAt) {
+	public TbNovaMcroRating(String ratingId, String userId, String hotelId, int rating, String comment,
+			LocalDateTime createdAt, LocalDateTime updatedAt,TbNovaMcroHotel hotel) {
 		super();
 		this.ratingId = ratingId;
-		this.userid = userid;
+		this.userId = userId;
 		this.hotelId = hotelId;
 		this.rating = rating;
 		this.comment = comment;
 		this.createdAt = createdAt;
 		this.updatedAt = updatedAt;
+		this.hotel = hotel;
 	}
 	
 }
